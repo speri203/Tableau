@@ -1,0 +1,1481 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.0801.1333                               -->
+<workbook original-version='18.1' source-build='2020.3.0 (20203.20.0801.1333)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Page    1 Table  1++ (P1-nyc-park-crime-stats-q1-2018)' inline='true' name='federated.06bwnu51oyd9th17s8b2j0k0nz9x' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='P1-nyc-park-crime-stats-q1-2018' name='pdf.0ys066c0yc8e1o18mndx51j9qohg'>
+            <connection class='pdf' cleaning='yes' compat='no' dataRefreshTime='' interpretationMode='257' origfilename='/Users/peri/Documents/Tableau/Module 9/P1-nyc-park-crime-stats-q1-2018.pdf' password='' pgFrom='' pgTo='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation type='project'>
+          <columns>
+            <column caption='Park' hidden='true' name='[Page    1 Table  1+].[PARK]' />
+            <column caption='F1' hidden='true' name='[Page    1 Table  1+].[F1]' />
+            <column name='[Project].[F1 &amp; Park]' project-type='coalesce' />
+          </columns>
+          <bindings>
+            <binding expression='IF NOT ISNULL([Page    1 Table  1+].[PARK]) THEN [Page    1 Table  1+].[PARK]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[F1]) THEN [Page    1 Table  1+].[F1]&#10;ELSE NULL&#10;END' name='[Project].[F1 &amp; Park]' />
+          </bindings>
+          <relation all='true' name='Page    1 Table  1+' type='union'>
+            <columns>
+              <column datatype='string' name='PARK' />
+              <column datatype='string' name='BOROUGH' />
+              <column datatype='string' name='SIZE (ACRES) CATEGORY' />
+              <column datatype='integer' name='Murder' />
+              <column datatype='integer' name='RAPE' />
+              <column datatype='integer' name='ROBBERY' />
+              <column datatype='integer' name='FELONY ASSAULT' />
+              <column datatype='integer' name='BURGLARY' />
+              <column datatype='integer' name='GRAND LARCENY' />
+              <column datatype='integer' name='MOTOR VEHICLE' />
+              <column datatype='integer' name='TOTAL' />
+              <column datatype='string' name='F1' />
+              <column datatype='string' name='Table Name' />
+            </columns>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    1 Table  1' table='[&apos;Page    1 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    2 Table  1' table='[&apos;Page    2 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:L55:no:A1:L55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='F1' ordinal='0' />
+                <column datatype='real' name='PARK' ordinal='1' />
+                <column datatype='string' name='BOROUGH' ordinal='2' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                <column datatype='integer' name='Murder' ordinal='4' />
+                <column datatype='integer' name='RAPE' ordinal='5' />
+                <column datatype='integer' name='ROBBERY' ordinal='6' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                <column datatype='integer' name='BURGLARY' ordinal='8' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                <column datatype='integer' name='TOTAL' ordinal='11' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    3 Table  1' table='[&apos;Page    3 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:L52:no:A1:L52:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='F1' ordinal='0' />
+                <column datatype='string' name='PARK' ordinal='1' />
+                <column datatype='string' name='BOROUGH' ordinal='2' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                <column datatype='integer' name='Murder' ordinal='4' />
+                <column datatype='integer' name='RAPE' ordinal='5' />
+                <column datatype='integer' name='ROBBERY' ordinal='6' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                <column datatype='integer' name='BURGLARY' ordinal='8' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                <column datatype='integer' name='TOTAL' ordinal='11' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    4 Table  1' table='[&apos;Page    4 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    5 Table  1' table='[&apos;Page    5 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    6 Table  1' table='[&apos;Page    6 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    7 Table  1' table='[&apos;Page    7 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    8 Table  1' table='[&apos;Page    8 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    9 Table  1' table='[&apos;Page    9 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   10 Table  1' table='[&apos;Page   10 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   11 Table  1' table='[&apos;Page   11 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:L55:no:A1:L55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='F1' ordinal='0' />
+                <column datatype='real' name='PARK' ordinal='1' />
+                <column datatype='string' name='BOROUGH' ordinal='2' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                <column datatype='integer' name='Murder' ordinal='4' />
+                <column datatype='integer' name='RAPE' ordinal='5' />
+                <column datatype='integer' name='ROBBERY' ordinal='6' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                <column datatype='integer' name='BURGLARY' ordinal='8' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                <column datatype='integer' name='TOTAL' ordinal='11' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   12 Table  1' table='[&apos;Page   12 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:L55:no:A1:L55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='F1' ordinal='0' />
+                <column datatype='real' name='PARK' ordinal='1' />
+                <column datatype='string' name='BOROUGH' ordinal='2' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                <column datatype='integer' name='Murder' ordinal='4' />
+                <column datatype='integer' name='RAPE' ordinal='5' />
+                <column datatype='integer' name='ROBBERY' ordinal='6' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                <column datatype='integer' name='BURGLARY' ordinal='8' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                <column datatype='integer' name='TOTAL' ordinal='11' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   13 Table  1' table='[&apos;Page   13 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:L55:no:A1:L55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='F1' ordinal='0' />
+                <column datatype='real' name='PARK' ordinal='1' />
+                <column datatype='string' name='BOROUGH' ordinal='2' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                <column datatype='integer' name='Murder' ordinal='4' />
+                <column datatype='integer' name='RAPE' ordinal='5' />
+                <column datatype='integer' name='ROBBERY' ordinal='6' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                <column datatype='integer' name='BURGLARY' ordinal='8' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                <column datatype='integer' name='TOTAL' ordinal='11' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   14 Table  1' table='[&apos;Page   14 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   15 Table  1' table='[&apos;Page   15 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   16 Table  1' table='[&apos;Page   16 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   17 Table  1' table='[&apos;Page   17 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='1' outcome='9' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   18 Table  1' table='[&apos;Page   18 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:L55:no:A1:L55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='F1' ordinal='0' />
+                <column datatype='real' name='PARK' ordinal='1' />
+                <column datatype='string' name='BOROUGH' ordinal='2' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                <column datatype='integer' name='Murder' ordinal='4' />
+                <column datatype='integer' name='RAPE' ordinal='5' />
+                <column datatype='integer' name='ROBBERY' ordinal='6' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                <column datatype='integer' name='BURGLARY' ordinal='8' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                <column datatype='integer' name='TOTAL' ordinal='11' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   19 Table  1' table='[&apos;Page   19 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   20 Table  1' table='[&apos;Page   20 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   21 Table  1' table='[&apos;Page   21 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   22 Table  1' table='[&apos;Page   22 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   23 Table  1' table='[&apos;Page   23 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:L55:no:A1:L55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='F1' ordinal='0' />
+                <column datatype='real' name='PARK' ordinal='1' />
+                <column datatype='string' name='BOROUGH' ordinal='2' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                <column datatype='integer' name='Murder' ordinal='4' />
+                <column datatype='integer' name='RAPE' ordinal='5' />
+                <column datatype='integer' name='ROBBERY' ordinal='6' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                <column datatype='integer' name='BURGLARY' ordinal='8' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                <column datatype='integer' name='TOTAL' ordinal='11' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   24 Table  1' table='[&apos;Page   24 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:L34:no:A1:L34:2' lost='0' outcome='1' processed='224'>
+                <column datatype='string' name='F1' ordinal='0' />
+                <column datatype='real' name='PARK' ordinal='1' />
+                <column datatype='string' name='BOROUGH' ordinal='2' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                <column datatype='integer' name='Murder' ordinal='4' />
+                <column datatype='integer' name='RAPE' ordinal='5' />
+                <column datatype='integer' name='ROBBERY' ordinal='6' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                <column datatype='integer' name='BURGLARY' ordinal='8' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                <column datatype='integer' name='TOTAL' ordinal='11' />
+              </columns>
+            </relation>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='project'>
+          <columns>
+            <column caption='Park' hidden='true' name='[Page    1 Table  1+].[PARK]' />
+            <column caption='F1' hidden='true' name='[Page    1 Table  1+].[F1]' />
+            <column name='[Project].[F1 &amp; Park]' project-type='coalesce' />
+          </columns>
+          <bindings>
+            <binding expression='IF NOT ISNULL([Page    1 Table  1+].[PARK]) THEN [Page    1 Table  1+].[PARK]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[F1]) THEN [Page    1 Table  1+].[F1]&#10;ELSE NULL&#10;END' name='[Project].[F1 &amp; Park]' />
+          </bindings>
+          <relation all='true' name='Page    1 Table  1+' type='union'>
+            <columns>
+              <column datatype='string' name='PARK' />
+              <column datatype='string' name='BOROUGH' />
+              <column datatype='string' name='SIZE (ACRES) CATEGORY' />
+              <column datatype='integer' name='Murder' />
+              <column datatype='integer' name='RAPE' />
+              <column datatype='integer' name='ROBBERY' />
+              <column datatype='integer' name='FELONY ASSAULT' />
+              <column datatype='integer' name='BURGLARY' />
+              <column datatype='integer' name='GRAND LARCENY' />
+              <column datatype='integer' name='MOTOR VEHICLE' />
+              <column datatype='integer' name='TOTAL' />
+              <column datatype='string' name='F1' />
+              <column datatype='string' name='Table Name' />
+            </columns>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    1 Table  1' table='[&apos;Page    1 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    2 Table  1' table='[&apos;Page    2 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:L55:no:A1:L55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='F1' ordinal='0' />
+                <column datatype='real' name='PARK' ordinal='1' />
+                <column datatype='string' name='BOROUGH' ordinal='2' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                <column datatype='integer' name='Murder' ordinal='4' />
+                <column datatype='integer' name='RAPE' ordinal='5' />
+                <column datatype='integer' name='ROBBERY' ordinal='6' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                <column datatype='integer' name='BURGLARY' ordinal='8' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                <column datatype='integer' name='TOTAL' ordinal='11' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    3 Table  1' table='[&apos;Page    3 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:L52:no:A1:L52:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='F1' ordinal='0' />
+                <column datatype='string' name='PARK' ordinal='1' />
+                <column datatype='string' name='BOROUGH' ordinal='2' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                <column datatype='integer' name='Murder' ordinal='4' />
+                <column datatype='integer' name='RAPE' ordinal='5' />
+                <column datatype='integer' name='ROBBERY' ordinal='6' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                <column datatype='integer' name='BURGLARY' ordinal='8' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                <column datatype='integer' name='TOTAL' ordinal='11' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    4 Table  1' table='[&apos;Page    4 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    5 Table  1' table='[&apos;Page    5 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    6 Table  1' table='[&apos;Page    6 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    7 Table  1' table='[&apos;Page    7 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    8 Table  1' table='[&apos;Page    8 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    9 Table  1' table='[&apos;Page    9 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   10 Table  1' table='[&apos;Page   10 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   11 Table  1' table='[&apos;Page   11 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:L55:no:A1:L55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='F1' ordinal='0' />
+                <column datatype='real' name='PARK' ordinal='1' />
+                <column datatype='string' name='BOROUGH' ordinal='2' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                <column datatype='integer' name='Murder' ordinal='4' />
+                <column datatype='integer' name='RAPE' ordinal='5' />
+                <column datatype='integer' name='ROBBERY' ordinal='6' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                <column datatype='integer' name='BURGLARY' ordinal='8' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                <column datatype='integer' name='TOTAL' ordinal='11' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   12 Table  1' table='[&apos;Page   12 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:L55:no:A1:L55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='F1' ordinal='0' />
+                <column datatype='real' name='PARK' ordinal='1' />
+                <column datatype='string' name='BOROUGH' ordinal='2' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                <column datatype='integer' name='Murder' ordinal='4' />
+                <column datatype='integer' name='RAPE' ordinal='5' />
+                <column datatype='integer' name='ROBBERY' ordinal='6' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                <column datatype='integer' name='BURGLARY' ordinal='8' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                <column datatype='integer' name='TOTAL' ordinal='11' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   13 Table  1' table='[&apos;Page   13 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:L55:no:A1:L55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='F1' ordinal='0' />
+                <column datatype='real' name='PARK' ordinal='1' />
+                <column datatype='string' name='BOROUGH' ordinal='2' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                <column datatype='integer' name='Murder' ordinal='4' />
+                <column datatype='integer' name='RAPE' ordinal='5' />
+                <column datatype='integer' name='ROBBERY' ordinal='6' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                <column datatype='integer' name='BURGLARY' ordinal='8' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                <column datatype='integer' name='TOTAL' ordinal='11' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   14 Table  1' table='[&apos;Page   14 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   15 Table  1' table='[&apos;Page   15 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   16 Table  1' table='[&apos;Page   16 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   17 Table  1' table='[&apos;Page   17 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='1' outcome='9' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   18 Table  1' table='[&apos;Page   18 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:L55:no:A1:L55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='F1' ordinal='0' />
+                <column datatype='real' name='PARK' ordinal='1' />
+                <column datatype='string' name='BOROUGH' ordinal='2' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                <column datatype='integer' name='Murder' ordinal='4' />
+                <column datatype='integer' name='RAPE' ordinal='5' />
+                <column datatype='integer' name='ROBBERY' ordinal='6' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                <column datatype='integer' name='BURGLARY' ordinal='8' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                <column datatype='integer' name='TOTAL' ordinal='11' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   19 Table  1' table='[&apos;Page   19 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   20 Table  1' table='[&apos;Page   20 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   21 Table  1' table='[&apos;Page   21 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   22 Table  1' table='[&apos;Page   22 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='PARK' ordinal='0' />
+                <column datatype='string' name='BOROUGH' ordinal='1' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                <column datatype='integer' name='Murder' ordinal='3' />
+                <column datatype='integer' name='RAPE' ordinal='4' />
+                <column datatype='integer' name='ROBBERY' ordinal='5' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                <column datatype='integer' name='BURGLARY' ordinal='7' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                <column datatype='integer' name='TOTAL' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   23 Table  1' table='[&apos;Page   23 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:L55:no:A1:L55:2' lost='0' outcome='1' processed='392'>
+                <column datatype='string' name='F1' ordinal='0' />
+                <column datatype='real' name='PARK' ordinal='1' />
+                <column datatype='string' name='BOROUGH' ordinal='2' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                <column datatype='integer' name='Murder' ordinal='4' />
+                <column datatype='integer' name='RAPE' ordinal='5' />
+                <column datatype='integer' name='ROBBERY' ordinal='6' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                <column datatype='integer' name='BURGLARY' ordinal='8' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                <column datatype='integer' name='TOTAL' ordinal='11' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   24 Table  1' table='[&apos;Page   24 Table  1$&apos;]' type='table'>
+              <columns gridOrigin='A1:L34:no:A1:L34:2' lost='0' outcome='1' processed='224'>
+                <column datatype='string' name='F1' ordinal='0' />
+                <column datatype='real' name='PARK' ordinal='1' />
+                <column datatype='string' name='BOROUGH' ordinal='2' />
+                <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                <column datatype='integer' name='Murder' ordinal='4' />
+                <column datatype='integer' name='RAPE' ordinal='5' />
+                <column datatype='integer' name='ROBBERY' ordinal='6' />
+                <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                <column datatype='integer' name='BURGLARY' ordinal='8' />
+                <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                <column datatype='integer' name='TOTAL' ordinal='11' />
+              </columns>
+            </relation>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Page    1 Table  1+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1 &amp; Park</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F1 &amp; Park]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>F1 &amp; Park</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_D0B1004E11E14EAC842796355E981CFC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BOROUGH</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BOROUGH]</local-name>
+            <parent-name>[Page    1 Table  1+]</parent-name>
+            <remote-alias>BOROUGH</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_D0B1004E11E14EAC842796355E981CFC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SIZE (ACRES) CATEGORY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SIZE (ACRES) CATEGORY]</local-name>
+            <parent-name>[Page    1 Table  1+]</parent-name>
+            <remote-alias>SIZE (ACRES) CATEGORY</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_D0B1004E11E14EAC842796355E981CFC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Murder</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Murder]</local-name>
+            <parent-name>[Page    1 Table  1+]</parent-name>
+            <remote-alias>Murder</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_D0B1004E11E14EAC842796355E981CFC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RAPE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RAPE]</local-name>
+            <parent-name>[Page    1 Table  1+]</parent-name>
+            <remote-alias>RAPE</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_D0B1004E11E14EAC842796355E981CFC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ROBBERY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ROBBERY]</local-name>
+            <parent-name>[Page    1 Table  1+]</parent-name>
+            <remote-alias>ROBBERY</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_D0B1004E11E14EAC842796355E981CFC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FELONY ASSAULT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FELONY ASSAULT]</local-name>
+            <parent-name>[Page    1 Table  1+]</parent-name>
+            <remote-alias>FELONY ASSAULT</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_D0B1004E11E14EAC842796355E981CFC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BURGLARY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BURGLARY]</local-name>
+            <parent-name>[Page    1 Table  1+]</parent-name>
+            <remote-alias>BURGLARY</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_D0B1004E11E14EAC842796355E981CFC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GRAND LARCENY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GRAND LARCENY]</local-name>
+            <parent-name>[Page    1 Table  1+]</parent-name>
+            <remote-alias>GRAND LARCENY</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_D0B1004E11E14EAC842796355E981CFC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MOTOR VEHICLE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MOTOR VEHICLE]</local-name>
+            <parent-name>[Page    1 Table  1+]</parent-name>
+            <remote-alias>MOTOR VEHICLE</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_D0B1004E11E14EAC842796355E981CFC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOTAL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOTAL]</local-name>
+            <parent-name>[Page    1 Table  1+]</parent-name>
+            <remote-alias>TOTAL</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_D0B1004E11E14EAC842796355E981CFC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[Page    1 Table  1+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_D0B1004E11E14EAC842796355E981CFC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Borough' datatype='string' name='[BOROUGH]' role='dimension' type='nominal' />
+      <column caption='Burglary' datatype='integer' hidden='true' name='[BURGLARY]' role='measure' type='quantitative' />
+      <column caption='Park' datatype='string' name='[F1 &amp; Park]' role='dimension' type='nominal' />
+      <column caption='Felony Assault' datatype='integer' hidden='true' name='[FELONY ASSAULT]' role='measure' type='quantitative' />
+      <column caption='Grand Larceny' datatype='integer' hidden='true' name='[GRAND LARCENY]' role='measure' type='quantitative' />
+      <column caption='Motor Vehicle' datatype='integer' hidden='true' name='[MOTOR VEHICLE]' role='measure' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[Murder]' role='measure' type='quantitative' />
+      <column caption='Rape' datatype='integer' hidden='true' name='[RAPE]' role='measure' type='quantitative' />
+      <column caption='Robbery' datatype='integer' hidden='true' name='[ROBBERY]' role='measure' type='quantitative' />
+      <column caption='Size (Acres) Category' datatype='string' hidden='true' name='[SIZE (ACRES) CATEGORY]' role='dimension' type='nominal' />
+      <column caption='Total Incidents' datatype='integer' name='[TOTAL]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[Table Name]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Page    1 Table  1' datatype='table' name='[__tableau_internal_object_id__].[Page    1 Table  1_D0B1004E11E14EAC842796355E981CFC]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='1154' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <filter class='categorical' column='[F1 &amp; Park]' filter-group='2'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[F1 &amp; Park]' />
+          <groupfilter function='member' level='[F1 &amp; Park]' member='&quot;TOTAL&quot;' />
+        </groupfilter>
+      </filter>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Page    1 Table  1' id='Page    1 Table  1_D0B1004E11E14EAC842796355E981CFC'>
+            <properties context=''>
+              <relation type='project'>
+                <columns>
+                  <column caption='Park' hidden='true' name='[Page    1 Table  1+].[PARK]' />
+                  <column caption='F1' hidden='true' name='[Page    1 Table  1+].[F1]' />
+                  <column name='[Project].[F1 &amp; Park]' project-type='coalesce' />
+                </columns>
+                <bindings>
+                  <binding expression='IF NOT ISNULL([Page    1 Table  1+].[PARK]) THEN [Page    1 Table  1+].[PARK]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[F1]) THEN [Page    1 Table  1+].[F1]&#10;ELSE NULL&#10;END' name='[Project].[F1 &amp; Park]' />
+                </bindings>
+                <relation all='true' name='Page    1 Table  1+' type='union'>
+                  <columns>
+                    <column datatype='string' name='PARK' />
+                    <column datatype='string' name='BOROUGH' />
+                    <column datatype='string' name='SIZE (ACRES) CATEGORY' />
+                    <column datatype='integer' name='Murder' />
+                    <column datatype='integer' name='RAPE' />
+                    <column datatype='integer' name='ROBBERY' />
+                    <column datatype='integer' name='FELONY ASSAULT' />
+                    <column datatype='integer' name='BURGLARY' />
+                    <column datatype='integer' name='GRAND LARCENY' />
+                    <column datatype='integer' name='MOTOR VEHICLE' />
+                    <column datatype='integer' name='TOTAL' />
+                    <column datatype='string' name='F1' />
+                    <column datatype='string' name='Table Name' />
+                  </columns>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    1 Table  1' table='[&apos;Page    1 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='PARK' ordinal='0' />
+                      <column datatype='string' name='BOROUGH' ordinal='1' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                      <column datatype='integer' name='Murder' ordinal='3' />
+                      <column datatype='integer' name='RAPE' ordinal='4' />
+                      <column datatype='integer' name='ROBBERY' ordinal='5' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                      <column datatype='integer' name='BURGLARY' ordinal='7' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                      <column datatype='integer' name='TOTAL' ordinal='10' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    2 Table  1' table='[&apos;Page    2 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:L55:no:A1:L55:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='F1' ordinal='0' />
+                      <column datatype='real' name='PARK' ordinal='1' />
+                      <column datatype='string' name='BOROUGH' ordinal='2' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                      <column datatype='integer' name='Murder' ordinal='4' />
+                      <column datatype='integer' name='RAPE' ordinal='5' />
+                      <column datatype='integer' name='ROBBERY' ordinal='6' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                      <column datatype='integer' name='BURGLARY' ordinal='8' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                      <column datatype='integer' name='TOTAL' ordinal='11' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    3 Table  1' table='[&apos;Page    3 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:L52:no:A1:L52:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='F1' ordinal='0' />
+                      <column datatype='string' name='PARK' ordinal='1' />
+                      <column datatype='string' name='BOROUGH' ordinal='2' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                      <column datatype='integer' name='Murder' ordinal='4' />
+                      <column datatype='integer' name='RAPE' ordinal='5' />
+                      <column datatype='integer' name='ROBBERY' ordinal='6' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                      <column datatype='integer' name='BURGLARY' ordinal='8' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                      <column datatype='integer' name='TOTAL' ordinal='11' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    4 Table  1' table='[&apos;Page    4 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='PARK' ordinal='0' />
+                      <column datatype='string' name='BOROUGH' ordinal='1' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                      <column datatype='integer' name='Murder' ordinal='3' />
+                      <column datatype='integer' name='RAPE' ordinal='4' />
+                      <column datatype='integer' name='ROBBERY' ordinal='5' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                      <column datatype='integer' name='BURGLARY' ordinal='7' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                      <column datatype='integer' name='TOTAL' ordinal='10' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    5 Table  1' table='[&apos;Page    5 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='PARK' ordinal='0' />
+                      <column datatype='string' name='BOROUGH' ordinal='1' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                      <column datatype='integer' name='Murder' ordinal='3' />
+                      <column datatype='integer' name='RAPE' ordinal='4' />
+                      <column datatype='integer' name='ROBBERY' ordinal='5' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                      <column datatype='integer' name='BURGLARY' ordinal='7' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                      <column datatype='integer' name='TOTAL' ordinal='10' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    6 Table  1' table='[&apos;Page    6 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='PARK' ordinal='0' />
+                      <column datatype='string' name='BOROUGH' ordinal='1' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                      <column datatype='integer' name='Murder' ordinal='3' />
+                      <column datatype='integer' name='RAPE' ordinal='4' />
+                      <column datatype='integer' name='ROBBERY' ordinal='5' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                      <column datatype='integer' name='BURGLARY' ordinal='7' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                      <column datatype='integer' name='TOTAL' ordinal='10' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    7 Table  1' table='[&apos;Page    7 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='PARK' ordinal='0' />
+                      <column datatype='string' name='BOROUGH' ordinal='1' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                      <column datatype='integer' name='Murder' ordinal='3' />
+                      <column datatype='integer' name='RAPE' ordinal='4' />
+                      <column datatype='integer' name='ROBBERY' ordinal='5' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                      <column datatype='integer' name='BURGLARY' ordinal='7' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                      <column datatype='integer' name='TOTAL' ordinal='10' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    8 Table  1' table='[&apos;Page    8 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='PARK' ordinal='0' />
+                      <column datatype='string' name='BOROUGH' ordinal='1' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                      <column datatype='integer' name='Murder' ordinal='3' />
+                      <column datatype='integer' name='RAPE' ordinal='4' />
+                      <column datatype='integer' name='ROBBERY' ordinal='5' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                      <column datatype='integer' name='BURGLARY' ordinal='7' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                      <column datatype='integer' name='TOTAL' ordinal='10' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page    9 Table  1' table='[&apos;Page    9 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='PARK' ordinal='0' />
+                      <column datatype='string' name='BOROUGH' ordinal='1' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                      <column datatype='integer' name='Murder' ordinal='3' />
+                      <column datatype='integer' name='RAPE' ordinal='4' />
+                      <column datatype='integer' name='ROBBERY' ordinal='5' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                      <column datatype='integer' name='BURGLARY' ordinal='7' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                      <column datatype='integer' name='TOTAL' ordinal='10' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   10 Table  1' table='[&apos;Page   10 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='PARK' ordinal='0' />
+                      <column datatype='string' name='BOROUGH' ordinal='1' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                      <column datatype='integer' name='Murder' ordinal='3' />
+                      <column datatype='integer' name='RAPE' ordinal='4' />
+                      <column datatype='integer' name='ROBBERY' ordinal='5' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                      <column datatype='integer' name='BURGLARY' ordinal='7' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                      <column datatype='integer' name='TOTAL' ordinal='10' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   11 Table  1' table='[&apos;Page   11 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:L55:no:A1:L55:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='F1' ordinal='0' />
+                      <column datatype='real' name='PARK' ordinal='1' />
+                      <column datatype='string' name='BOROUGH' ordinal='2' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                      <column datatype='integer' name='Murder' ordinal='4' />
+                      <column datatype='integer' name='RAPE' ordinal='5' />
+                      <column datatype='integer' name='ROBBERY' ordinal='6' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                      <column datatype='integer' name='BURGLARY' ordinal='8' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                      <column datatype='integer' name='TOTAL' ordinal='11' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   12 Table  1' table='[&apos;Page   12 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:L55:no:A1:L55:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='F1' ordinal='0' />
+                      <column datatype='real' name='PARK' ordinal='1' />
+                      <column datatype='string' name='BOROUGH' ordinal='2' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                      <column datatype='integer' name='Murder' ordinal='4' />
+                      <column datatype='integer' name='RAPE' ordinal='5' />
+                      <column datatype='integer' name='ROBBERY' ordinal='6' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                      <column datatype='integer' name='BURGLARY' ordinal='8' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                      <column datatype='integer' name='TOTAL' ordinal='11' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   13 Table  1' table='[&apos;Page   13 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:L55:no:A1:L55:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='F1' ordinal='0' />
+                      <column datatype='real' name='PARK' ordinal='1' />
+                      <column datatype='string' name='BOROUGH' ordinal='2' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                      <column datatype='integer' name='Murder' ordinal='4' />
+                      <column datatype='integer' name='RAPE' ordinal='5' />
+                      <column datatype='integer' name='ROBBERY' ordinal='6' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                      <column datatype='integer' name='BURGLARY' ordinal='8' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                      <column datatype='integer' name='TOTAL' ordinal='11' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   14 Table  1' table='[&apos;Page   14 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='PARK' ordinal='0' />
+                      <column datatype='string' name='BOROUGH' ordinal='1' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                      <column datatype='integer' name='Murder' ordinal='3' />
+                      <column datatype='integer' name='RAPE' ordinal='4' />
+                      <column datatype='integer' name='ROBBERY' ordinal='5' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                      <column datatype='integer' name='BURGLARY' ordinal='7' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                      <column datatype='integer' name='TOTAL' ordinal='10' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   15 Table  1' table='[&apos;Page   15 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='PARK' ordinal='0' />
+                      <column datatype='string' name='BOROUGH' ordinal='1' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                      <column datatype='integer' name='Murder' ordinal='3' />
+                      <column datatype='integer' name='RAPE' ordinal='4' />
+                      <column datatype='integer' name='ROBBERY' ordinal='5' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                      <column datatype='integer' name='BURGLARY' ordinal='7' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                      <column datatype='integer' name='TOTAL' ordinal='10' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   16 Table  1' table='[&apos;Page   16 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='PARK' ordinal='0' />
+                      <column datatype='string' name='BOROUGH' ordinal='1' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                      <column datatype='integer' name='Murder' ordinal='3' />
+                      <column datatype='integer' name='RAPE' ordinal='4' />
+                      <column datatype='integer' name='ROBBERY' ordinal='5' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                      <column datatype='integer' name='BURGLARY' ordinal='7' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                      <column datatype='integer' name='TOTAL' ordinal='10' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   17 Table  1' table='[&apos;Page   17 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:K55:no:A1:K55:2' lost='1' outcome='9' processed='392'>
+                      <column datatype='string' name='PARK' ordinal='0' />
+                      <column datatype='string' name='BOROUGH' ordinal='1' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                      <column datatype='integer' name='Murder' ordinal='3' />
+                      <column datatype='integer' name='RAPE' ordinal='4' />
+                      <column datatype='integer' name='ROBBERY' ordinal='5' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                      <column datatype='integer' name='BURGLARY' ordinal='7' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                      <column datatype='integer' name='TOTAL' ordinal='10' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   18 Table  1' table='[&apos;Page   18 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:L55:no:A1:L55:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='F1' ordinal='0' />
+                      <column datatype='real' name='PARK' ordinal='1' />
+                      <column datatype='string' name='BOROUGH' ordinal='2' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                      <column datatype='integer' name='Murder' ordinal='4' />
+                      <column datatype='integer' name='RAPE' ordinal='5' />
+                      <column datatype='integer' name='ROBBERY' ordinal='6' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                      <column datatype='integer' name='BURGLARY' ordinal='8' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                      <column datatype='integer' name='TOTAL' ordinal='11' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   19 Table  1' table='[&apos;Page   19 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='PARK' ordinal='0' />
+                      <column datatype='string' name='BOROUGH' ordinal='1' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                      <column datatype='integer' name='Murder' ordinal='3' />
+                      <column datatype='integer' name='RAPE' ordinal='4' />
+                      <column datatype='integer' name='ROBBERY' ordinal='5' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                      <column datatype='integer' name='BURGLARY' ordinal='7' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                      <column datatype='integer' name='TOTAL' ordinal='10' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   20 Table  1' table='[&apos;Page   20 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='PARK' ordinal='0' />
+                      <column datatype='string' name='BOROUGH' ordinal='1' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                      <column datatype='integer' name='Murder' ordinal='3' />
+                      <column datatype='integer' name='RAPE' ordinal='4' />
+                      <column datatype='integer' name='ROBBERY' ordinal='5' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                      <column datatype='integer' name='BURGLARY' ordinal='7' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                      <column datatype='integer' name='TOTAL' ordinal='10' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   21 Table  1' table='[&apos;Page   21 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='PARK' ordinal='0' />
+                      <column datatype='string' name='BOROUGH' ordinal='1' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                      <column datatype='integer' name='Murder' ordinal='3' />
+                      <column datatype='integer' name='RAPE' ordinal='4' />
+                      <column datatype='integer' name='ROBBERY' ordinal='5' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                      <column datatype='integer' name='BURGLARY' ordinal='7' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                      <column datatype='integer' name='TOTAL' ordinal='10' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   22 Table  1' table='[&apos;Page   22 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:K55:no:A1:K55:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='PARK' ordinal='0' />
+                      <column datatype='string' name='BOROUGH' ordinal='1' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='2' />
+                      <column datatype='integer' name='Murder' ordinal='3' />
+                      <column datatype='integer' name='RAPE' ordinal='4' />
+                      <column datatype='integer' name='ROBBERY' ordinal='5' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='6' />
+                      <column datatype='integer' name='BURGLARY' ordinal='7' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='8' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='9' />
+                      <column datatype='integer' name='TOTAL' ordinal='10' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   23 Table  1' table='[&apos;Page   23 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:L55:no:A1:L55:2' lost='0' outcome='1' processed='392'>
+                      <column datatype='string' name='F1' ordinal='0' />
+                      <column datatype='real' name='PARK' ordinal='1' />
+                      <column datatype='string' name='BOROUGH' ordinal='2' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                      <column datatype='integer' name='Murder' ordinal='4' />
+                      <column datatype='integer' name='RAPE' ordinal='5' />
+                      <column datatype='integer' name='ROBBERY' ordinal='6' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                      <column datatype='integer' name='BURGLARY' ordinal='8' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                      <column datatype='integer' name='TOTAL' ordinal='11' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.0ys066c0yc8e1o18mndx51j9qohg' name='Page   24 Table  1' table='[&apos;Page   24 Table  1$&apos;]' type='table'>
+                    <columns gridOrigin='A1:L34:no:A1:L34:2' lost='0' outcome='1' processed='224'>
+                      <column datatype='string' name='F1' ordinal='0' />
+                      <column datatype='real' name='PARK' ordinal='1' />
+                      <column datatype='string' name='BOROUGH' ordinal='2' />
+                      <column datatype='string' name='SIZE (ACRES) CATEGORY' ordinal='3' />
+                      <column datatype='integer' name='Murder' ordinal='4' />
+                      <column datatype='integer' name='RAPE' ordinal='5' />
+                      <column datatype='integer' name='ROBBERY' ordinal='6' />
+                      <column datatype='integer' name='FELONY ASSAULT' ordinal='7' />
+                      <column datatype='integer' name='BURGLARY' ordinal='8' />
+                      <column datatype='integer' name='GRAND LARCENY' ordinal='9' />
+                      <column datatype='integer' name='MOTOR VEHICLE' ordinal='10' />
+                      <column datatype='integer' name='TOTAL' ordinal='11' />
+                    </columns>
+                  </relation>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Page    1 Table  1++ (P1-nyc-park-crime-stats-q1-2018)' name='federated.06bwnu51oyd9th17s8b2j0k0nz9x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.06bwnu51oyd9th17s8b2j0k0nz9x'>
+            <column caption='Total Incidents' datatype='integer' name='[TOTAL]' role='measure' type='quantitative' />
+            <column-instance column='[TOTAL]' derivation='Sum' name='[sum:TOTAL:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.06bwnu51oyd9th17s8b2j0k0nz9x].[sum:TOTAL:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8CC2BF14-B9D1-472E-97FC-3A4F87F7AE1B}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A0CD3C8E-D7AF-4BAD-A1E6-4C09859C47DE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='24' name='Sheet 1' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACI0lEQVRYhe2YP2vqUBjGn0QpdChC0QyhtOLkl+ji4hB0UBzdAkWpdHdqwS2LGURBRLo5
+      VBARxLVfoC6KVCoIxba2RRpIUKN9O9xLQK4dyu29h9D8tuf9A895OCdDOCIi/GB41gZY4wTA
+      2gBrnABYG2CNEwBrA6xxAmBtgDVOAKwNsMYJgLWBr2IYBh4eHvD+/r61r+v61rqmaZhMJliv
+      1xt197c7/Ef0ej0oigJd17G7u4vZbAZFURAMBq1+oVCAaZool8vW3nK5RDabxf39PQRBwHg8
+      xtnZGUKh0K8BsgmlUon6/b6l2+02ZTIZIiK6urqiTCZDrVaLZFne2KvVapTL5Sz9+PhI4XCY
+      VqsVERHZ5gacnJxsaK/XC47jAACRSATxeBzT6RSNRmNjjud5eDweS+/t7cHtdlu7tvsGAMDt
+      7S0uLi6QTCYBADs7O5/OSpKEbreLfD6Per2O09NTyLIMnv999P9we7+NZrNJsViMxuPx1v7T
+      09MfT+Dy8pJUVbX06+srRaNRMgyDiIhscwNubm5QrVZRLBZxeHj4pb3j42NL7+/vIxAIYDgc
+      ArDRE+h0Okin0xAE4Ut7fr8f19fXln55ecFgMIAoigAAjsgeP0UTiQTm8/nGez84OICqqjg/
+      P8fd3R1M08RkMsHR0RE4jkOlUsFisUA2m8Xz8zN8Ph9GoxFSqRQkSQJgowD+Fk3T8Pb2BlEU
+      4XK5rPqPCeAzPgAzCX5kCbGJdgAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>

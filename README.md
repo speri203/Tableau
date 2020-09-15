@@ -95,4 +95,10 @@ Tableau exercises for visualization
         - To save clusters you can hold CTRL (CMD) and drag it into dimension. This will create a new group
             - Useful for when we want to create new sheets based on the clustering
 - Module 9 - What's new in Tableau
+    - When importing PDF's Tableau might create multiple table representations for a given page. The sheets need to be analyzed to see which one makes sense
+    - If separate tables are created for the same column when importing PDF, you can highlight the columns and right click → Merge Mismatched Fields
+    - Can filter out specific values using the Filters → Add (Next to Connection)
+    - Separate sheets can be added to tooltips as well
+        - Click Tooltip → Insert → Sheets
 - Module 10 - Conclusion
+    - Powerpoint has been uploaded
