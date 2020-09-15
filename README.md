@@ -1,5 +1,5 @@
 # Tableau Course from U-Demy
-Tableau exercises for visualization 
+Tableau 2020 A-Z: Hands-On Tableau Training for Data Science Course (https://www.udemy.com/course/tableau10/)
 - Module 1 - Installation of Tableau
     - Tableau Desktop: [https://www.tableau.com/products/desktop](https://www.tableau.com/products/desktop)
     - Tableau Public: [https://public.tableau.com/en-us/s/](https://public.tableau.com/en-us/s/)
